@@ -60,7 +60,7 @@ class SnakeGame:
     def _update_obstacles(self):
         """Adds obstacles based on score. This is our difficulty scaling."""
         # Add a new obstacle for every 3 points scored
-        num_obstacles_to_add = (self.score // 3) - len(self.obstacles)
+        num_obstacles_to_add = (self.score // 4) - len(self.obstacles)
         for _ in range(num_obstacles_to_add):
             attempts = 0
             while attempts < 100:  # Prevent infinite loop
